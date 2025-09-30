@@ -49,5 +49,11 @@ public class TaskController {
         return repo.get(id);
     }
 
+    @GetMapping
+    public Map<String, Map<String, Object>> getAllTasks() {
+        return repo.getAll();
+    }
+
+
 }
 

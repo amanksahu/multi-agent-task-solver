@@ -13,4 +13,9 @@ public class TaskRepository {
     public Map<String, Object> get(String taskId) {
         return tasks.getOrDefault(taskId, Map.of());
     }
+
+    public Map<String, Map<String, Object>> getAll() {
+        return tasks;
+    }
+
 }
